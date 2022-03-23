@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="false"
+    android:background="#B078BA"
+    android:backgroundTint="#B078BA"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#4A2A83"
+        android:text="0"
+        android:textColor="#BE8FC6"
+        android:textSize="30sp"
+        android:tooltipText="Resultado" />
+
+
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:backgroundTint="#9C27B0"
+        android:ems="10"
+        android:hint="Escribe un numero"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:backgroundTint="#9C27B0"
+        android:ems="10"
+        android:hint="Escribe un numero"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingBottom="0px">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_suma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4A2A83"
+                android:tooltipText="Sumar"
+                android:text="Suma" />
+
+            <Button
+                android:id="@+id/button_resta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4A2A83"
+                android:tooltipText="Restar"
+                android:text="Resta" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_division"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4A2A83"
+                android:tooltipText="Dividir"
+                android:text="División" />
+
+            <Button
+                android:id="@+id/button_multiplicacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#4A2A83"
+                android:tooltipText="Multiplicar"
+                android:text="Multiplicación" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_porcentaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4A2A83"
+                android:tooltipText="Porcentaje"
+                android:text="%" />
+
+            <Button
+                android:id="@+id/button_opuesto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4A2A83"
+                android:tooltipText="Poner el opuesto"
+                android:text="(-)" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button_useResult"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#4A2A83"
+        android:tooltipText="Utilizar resultado"
+        android:text="Utilizar último resultado" />
+
+    <Button
+        android:id="@+id/button_delete"
+        android:layout_width="397dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:backgroundTint="#4A2A83"
+        android:tooltipText="Resetear"
+        android:text="Borrar" />
+
+</LinearLayout>
